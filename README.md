@@ -22,6 +22,8 @@ multitrack
 ## Build
 ```bash
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+```
+```bash
 cmake --build build -j
 ```
 

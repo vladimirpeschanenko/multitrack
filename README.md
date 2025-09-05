@@ -29,3 +29,7 @@ cmake --build build -j
 ```bash
 ./build/multitrack file:<path> <rect.txt>
 ```
+## Example
+```bash
+./build/multitrack "file:input/track_v2025.txt" "input/rect_v2025.txt"
+```

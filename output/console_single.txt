@@ -1,0 +1,9 @@
+[id=0 t=7.200] v=(7.537,4.067) speed=8.564 heading=28.353 deg
+  Enter @ t=15.288 at (-8.000,-5.266)
+  EPS=184713.140
+
+=== IO Stats ===
+lines=10 parsed=10 dropped=0 errors=0
+=== Worker Stats ===
+id=0 ingested=10 snapshots=1 last_EPS=184713
+=== Overall avg EPS: 34952.9

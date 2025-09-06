@@ -1,0 +1,37 @@
+[id=0 t=0] warming up...
+[id=0 t=0.800] v=(4.087,0.583) speed=4.129 heading=8.116 deg
+  Not on course to enter.
+  EPS=44553.353
+[id=0 t=1.600] v=(7.661,1.771) speed=7.863 heading=13.014 deg
+  Not on course to enter.
+  EPS=104591.570
+[id=0 t=2.400] v=(8.130,2.971) speed=8.656 heading=20.076 deg
+  Not on course to enter.
+  EPS=156347.717
+[id=0 t=3.200] v=(8.004,2.168) speed=8.293 heading=15.154 deg
+  Not on course to enter.
+  EPS=179533.214
+[id=0 t=4.000] v=(7.726,2.830) speed=8.228 heading=20.120 deg
+  Not on course to enter.
+  EPS=189645.363
+[id=0 t=4.800] v=(7.387,3.341) speed=8.107 heading=24.334 deg
+  Enter @ t=17.376 at (5.294,-8.000)
+  EPS=158679.784
+[id=0 t=5.600] v=(7.722,3.497) speed=8.477 heading=24.363 deg
+  Enter @ t=16.671 at (5.137,-8.000)
+  EPS=124115.676
+[id=0 t=6.400] v=(7.672,3.765) speed=8.546 heading=26.140 deg
+  Enter @ t=15.617 at (-3.701,-8.000)
+  EPS=156568.029
+[id=0 t=7.200] v=(7.537,4.067) speed=8.564 heading=28.353 deg
+  Enter @ t=15.288 at (-8.000,-5.266)
+  EPS=153917.193
+[id=0 t=7.200] v=(7.537,4.067) speed=8.564 heading=28.353 deg
+  Enter @ t=15.288 at (-8.000,-5.266)
+  EPS=0.000
+
+=== IO Stats ===
+lines=10 parsed=10 dropped=0 errors=0
+=== Worker Stats ===
+id=0 ingested=10 snapshots=11 last_EPS=0
+=== Overall avg EPS: 32166

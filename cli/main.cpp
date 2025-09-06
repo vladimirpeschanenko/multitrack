@@ -1,3 +1,5 @@
+#include "core/alpha_beta.hpp"
+#include "core/kalman.hpp"
 #include "engine/engine.hpp"
 #include "engine/router.hpp"
 #include "engine/worker.hpp"
@@ -38,7 +40,9 @@ int main(int argc, char **argv) {
   }
   IOStats io;
   ConsoleSink sink;
-  using WorkerT = Worker<ConsoleSink, 1024>;
+  // using WorkerT = Worker<ConsoleSink, 1024, MotionModel>;
+  // using WorkerT = Worker<ConsoleSink, 1024, AlphaBeta>;
+  using WorkerT = Worker<ConsoleSink, 1024, KalmanCV2D>;
   Router<WorkerT> router(io);
   auto t0 = std::chrono::steady_clock::now();
   if (cmd.source.rfind("file:", 0) == 0) {

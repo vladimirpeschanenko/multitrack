@@ -1,33 +1,35 @@
+
+From branch : DP
 [id=0 t=0.000] v=(0.000,0.000) speed=0.000 heading=0.000 deg
   Not on course to enter.
-  EPS=6797.634
+  EPS=24381.324
 [id=0 t=0.800] v=(3.970,0.566) speed=4.010 heading=8.116 deg
   Not on course to enter.
-  EPS=8832.908
+  EPS=46891.119
 [id=0 t=1.600] v=(7.760,1.808) speed=7.968 heading=13.117 deg
   Not on course to enter.
-  EPS=194439.043
+  EPS=161890.886
 [id=0 t=2.400] v=(8.146,3.259) speed=8.774 heading=21.806 deg
   Not on course to enter.
-  EPS=270709.258
+  EPS=81135.903
 [id=0 t=3.200] v=(7.822,1.588) speed=7.982 heading=11.476 deg
   Not on course to enter.
-  EPS=293427.230
+  EPS=212585.034
 [id=0 t=4.000] v=(7.238,3.572) speed=8.071 heading=26.265 deg
   Enter @ t=16.690 at (-1.203,-8.000)
-  EPS=246730.817
+  EPS=243902.439
 [id=0 t=4.800] v=(6.501,4.647) speed=7.991 heading=35.556 deg
   Not on course to enter.
-  EPS=154249.576
+  EPS=177999.288
 [id=0 t=5.600] v=(8.622,4.206) speed=9.593 heading=26.003 deg
   Enter @ t=14.542 at (-2.494,-8.000)
-  EPS=38791.264
+  EPS=204331.835
 [id=0 t=6.400] v=(7.715,4.876) speed=9.127 heading=32.290 deg
   Enter @ t=14.995 at (-8.000,0.856)
-  EPS=232828.871
+  EPS=194363.460
 [id=0 t=7.200] v=(6.799,5.693) speed=8.868 heading=39.941 deg
   Not on course to enter.
-  EPS=232937.340
+  EPS=191938.580
 [id=0 t=7.200] v=(6.799,5.693) speed=8.868 heading=39.941 deg
   Not on course to enter.
   EPS=0.000
@@ -36,4 +38,4 @@
 lines=10 parsed=10 dropped=0 errors=0
 === Worker Stats ===
 id=0 ingested=10 snapshots=11 last_EPS=0
-=== Overall avg EPS: 12649.5
+=== Overall avg EPS: 41073.5

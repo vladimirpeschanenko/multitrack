@@ -1,0 +1,3 @@
+/Users/vladim/Sources/multitrack/build/CMakeFiles/multitrack.dir
+/Users/vladim/Sources/multitrack/build/CMakeFiles/edit_cache.dir
+/Users/vladim/Sources/multitrack/build/CMakeFiles/rebuild_cache.dir

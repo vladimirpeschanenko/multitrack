@@ -17,9 +17,9 @@ class ConsoleSink {
   alignas(64) mutable std::mutex mu_;
 
 public:
-  inline void on_snapshot(std::uint32_t id, double t_now,
-                          const MotionModel &model, const Rectangle &rect,
-                          double eps) noexcept {
+  template <typename T>
+  inline void on_snapshot(std::uint32_t id, double t_now, const T &model,
+                          const Rectangle &rect, double eps) noexcept {
     std::ostringstream ostr;
     if (!model.ready()) {
       ostr << "[id=" << id << " t=" << t_now << "] warming up...\n";

@@ -71,7 +71,8 @@ public:
    *         - t_exit : last time still inside r,
    *         - p_enter: entry coordinates at t_enter.
    */
-  static inline EntryResult firstEntry(const MotionModel &m, const Rectangle &r,
+  template <typename T>
+  static inline EntryResult firstEntry(const T &m, const Rectangle &r,
                                        double tmin) noexcept {
     double ax, bx, ay, by;
     m.params(ax, bx, ay, by);

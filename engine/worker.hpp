@@ -9,12 +9,27 @@
 #include <thread>
 #include <vector>
 
-template <typename Sink, std::size_t RingCap> class alignas(64) Worker {
+#define PRINT_STEP 1
+
+template <class P>
+concept PredictorLike = requires(P p, const TrackPoint &tp, double t,
+                                 Point &out) {
+  { p.add(tp) }
+  noexcept;
+  { p.ready() } -> std::same_as<bool>;
+  { p.velocity(std::declval<double &>(), std::declval<double &>()) }
+  noexcept;
+  { p.positionAt(t, out) }
+  noexcept;
+};
+
+template <typename Sink, std::size_t RingCap, PredictorLike Predictor>
+class alignas(64) Worker {
   const std::uint32_t id;
   Rectangle rect;
   Sink &sink;
   SpscRing<TrackPoint, RingCap> ring;
-  MotionModel model;
+  Predictor model;
   std::thread th;
   // EPS state (worker-local → no contention)
   alignas(64) std::size_t last_ingested{0};
@@ -40,7 +55,7 @@ public:
         if (ring.try_pop(tp)) {
           model.add(tp);
           ++stats.ingested;
-          if ((stats.ingested & 0x3F) == 0) {
+          if ((stats.ingested & PRINT_STEP) == 0 || PRINT_STEP == 1) {
             // compute EPS since last snapshot
             auto now = std::chrono::steady_clock::now();
             double dt = std::chrono::duration<double>(now - last_tp).count();
